@@ -1,0 +1,76 @@
+
+
+ body {
+        font-family: "Sono", sans-serif;
+      }
+      .sweet-main {
+        font-size: 1.5em;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      .sweet-price {
+        font-size: 2.5em;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      .sweet-image{
+        width: 200px;
+        height: 200px;
+        border-radius: 5%;
+        margin-bottom: 20px;
+      }
+      .sweet-features {
+        
+        list-style: none;/*to remove the point dots*/
+        padding: 0;
+        margin: 0;
+      }
+     .sweet-features li {
+        margin-bottom: 20px;
+        }
+     .main{
+     display: flex;
+        
+     align-items: center;
+     justify-content: center;
+     padding: 20px;
+     height: 100vh;
+     gap: 2rem;
+        }
+     .points-plan{
+     background-color: rgba(183, 186, 231, 0.849);
+    flex:1; /*every block wiil be equal*/
+    max-width: 400px;
+     padding: 20px;
+     border-radius: 5px;
+     text-align: center;
+        }
+    .plan-button {
+        
+        background-color: rgb(80, 33, 1);
+        color: aliceblue;
+        border-radius: 5px;
+        border: none;
+        
+        font-size: 1em;
+        font-weight: bold;
+        padding: 10px;
+      }
+       @media (max-width: 1250px) {
+        .main {
+          flex-direction: column;
+          height: 100%;
+        }
+      }
+      .img1{
+        width:300px;
+        height:300px;
+        border-radius: 5%;
+      }
+      .image-gallery {
+  margin-top: 15px;
+}
+
+.hidden {
+  display: none;
+}

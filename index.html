@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Web Page</title>
+<link rel="stylesheet" href="style.css">
+ <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+</head>
+<body>
+    <div class="main">
+        <div class="points-plan">
+        <div class="sweet-main"> 🍨Rasmalai</div>
+        <img class="sweet-image" src="ras.jpg" alt="Rasmalai">
+        <div class="sweet-price">$5 (per-piece approx 100g)</div>
+        <ul class="sweet-features">
+          <li>😋Ingredients: Chenna (cottage cheese), milk, sugar, cardamom, saffron</li>
+          <li>😁Calories: ~200 kcal</li>
+          <li>🤩Protein: ~4g (from chenna/milk solids)</li>
+          <li>😢Sugar: High (~25g)</li>
+          <li>😁Fat: ~8g (from milk & cream)</li>
+        </ul>
+        
+         <button class="plan-button" onclick="showImages('rasmalai')">Buy</button>
+      <div class="image-gallery hidden" id="rasmalai-gallery">
+        <img class="img1" src="ras1.jpg" alt="Rasmalai Side View" />
+        
+      </div>
+        </div>
+        
+        
+         
+      <div class="points-plan">
+        <div class="sweet-main"> 🍫 Brownie</div>
+        <img class="sweet-image" src="bro.jpg" alt="Brownie">
+        <div class="sweet-price">$9 (per-piece approx 100g)</div>
+        <ul class="sweet-features">
+          <li>😋Ingredients: All-purpose flour,Cocoa powder,Butter,Sugar,Eggs</li>
+          <li>🤔Calories: 400 kcal</li>
+          <li>🤩Protein: 5g (from khoya)</li>
+          <li>😐Sugar: Very High (35g)</li>
+          <li>😢Fat: 20g ( from butter and chocolate)</li>
+        </ul>
+         <button class="plan-button" onclick="showImages('brownie')">Buy</button>
+      <div class="image-gallery hidden" id="brownie-gallery">
+        <img class="img1" src="brownie1.jpg" alt="Brownie Slice" />
+        
+      </div>
+        </div>
+        </div>
+         <!-- Script -->
+  <script>
+  function showImages(id) {
+    const gallery = document.getElementById(id + "-gallery");
+    gallery.classList.toggle("hidden");
+  }
+</script>
+
+        </body>
